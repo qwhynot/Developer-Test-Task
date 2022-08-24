@@ -1,0 +1,97 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+#posts-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.card {
+    margin: 10px;
+    width: 700px;
+}
+
+#add-comment-btn {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#add-post-form {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+#post-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+}
+
+.d-flex {
+    margin: 10px;
+    padding: 0 30px 0 30px;
+}
+
+#add-new-post-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    float: right;
+}
+
+.add-new-post-btn-container {
+    width: 700px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.rating-area {
+    overflow: hidden;
+    width: 265px;
+    margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 42px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+.rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+/*.rating-area {*/
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+.rating-area:not(:checked) > label.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
